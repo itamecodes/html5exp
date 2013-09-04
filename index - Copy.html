@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Page</title>
+<style>
+.container{
+    width:960px;
+    margin:auto;
+    height:900px;
+    position:relative;
+}
+#mycanvas,#debugCanvas{
+    margin:auto;
+    border:1px solid gray;
+    position:absolute;
+    left:0;
+}
+#mycanvas{
+    z-index:5;
+}
+#debugCanvas{
+    z-index:0;
+}
+body{
+    background-color:#212121;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<canvas height="900px" width="960px" id="mycanvas"></canvas>
+<canvas height="900px" width="960px" id="debugCanvas"></canvas>
+
+
+</div>
+<script src="js/lib/mychromeexperiments.js"></script>
+<script src="js/lib/myease.js"></script>
+<script src="js/lib/mytween.js"></script>
+<script src="js/myscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Page</title>
+<style>
+@font-face{ 
+font-family: 'roboto_ltregular';
+    src: url('fonts/roboto-light-webfont.eot');
+    src: url('fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto-light-webfont.svg#roboto_ltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    width:960px;
+    margin:auto;
+    height:559px;
+    position:relative;
+}
+#mycanvas,#debugCanvas{
+    margin-left:45px;
+    
+   
+    position:absolute;
+    left:0;
+}
+#mycanvas{
+    z-index:5;
+}
+#debugCanvas{
+    z-index:0;
+}
+body{
+    background-color:#212121;
+}
+#overlay{
+position: absolute;
+left: 416px;
+width: 499px;
+height:355px;
+top: 46px;
+z-index: 10;
+font-family: 'roboto_ltregular';
+overflow-x: hidden;
+overflow-y: auto;
+}
+#theheading{
+color: #33B5E5;
+font-size: 29px;
+width: 100%;
+text-align: right;
+padding-top: 10px;
+padding-right: 10px;
+}
+#theparagraphone{
+  padding-left:130px;
+color: white;
+font-size: 13px;
+font-family: 'roboto_ltregular';
+text-align: justify;
+padding-top: 14px;
+line-height: 23px;
+}
+#theparagraphtwo{
+margin-top: 10px;
+color: #72812D;
+}
+#thedesctext{
+    line-height: 28px;
+text-align: justify;
+
+}
+.themenus{
+    font-family: 'roboto_ltregular';
+   color: #33B5E5; 
+   overflow: auto;
+   
+   margin-bottom: 19px;
+}
+.themenus ul{
+  list-style:none;
+  margin-left: 465px;  
+}
+.themenus li{
+    float: left;
+padding-left: 27px;
+}
+.thesearchbox{
+margin-left: 771px;
+}
+.searchinput{
+        background: #212121;
+border: none;
+color: #33B5E5;
+    border-bottom: 1px solid #33B5E5;
+    text-align:center;
+}
+#footer{
+    font-family: roboto_ltregular;
+color: #33B5E5;
+overflow: auto; 
+}
+#lefty{
+  overflow: auto;
+margin-left: 42px;
+float: left;
+}
+#social,#getquote{
+    float: left;
+padding-left: 10px;
+}
+#righty{
+    float: left;
+margin-left: 595px;
+}
+
+
+</style>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/mychromeexperiments.js"></script>
+<script src="js/lib/myease.js"></script>
+<script src="js/lib/mytween.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="thesearchbox">
+<input type="text" value="Search The Site" class="searchinput"/>
+
+</div>
+<div class="themenus">
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Services</li>
+<li>Clients</li>
+<li>Contact</li>
+</ul>
+
+</div>
+<div class="container">
+
+<canvas height="550px" width="870px" id="mycanvas"></canvas>
+<canvas height="550px" width="870px" id="debugCanvas"></canvas>
+<div id="overlay">
+
+<div id="theheading">
+
+</div>
+
+<div id="theparagraphtwo">
+<img src="img/empty.png" align="left"/><p id="thedesctext">
+
+</p>
+
+</div>
+</div>
+
+</div>
+<div id="footer">
+<div id="lefty">
+<div id="social">Get Social</div>
+<div id="getquote">Get Quote</div>
+</div>
+<div id="righty">
+All Rights Reserved
+</div>
+</div>
+</div>
+<script src="js/myscript.js"></script>
+</body>
+</html>
